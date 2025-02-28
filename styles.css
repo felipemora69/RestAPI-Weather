@@ -138,8 +138,77 @@ body {
     letter-spacing: 0.1em;
 }
 
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        font-size: 14px;
+        width: 90%;
+        padding: 1em;
+    }
+
+    .search-container {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .search-container input,
+    .search-container button {
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    #result h1 {
+        font-size: 2.5em;
+    }
+
+    #result img {
+        width: 5em;
+    }
+
+    .temp-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .temp-container div {
+        margin-bottom: 1em;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .wrapper {
-      font-size: 14px;
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .container {
+        padding: 2em 1.5em;
+    }
+
+    #result h1 {
+        font-size: 2em;
+    }
+
+    .search-container input {
+        font-size: 1.1em;
+        padding: 0.6em;
+    }
+
+    .search-container button {
+        padding: 0.8em;
+    }
+
+    .msg {
+        font-size: 0.8em;
+    }
+
+    .weather,
+    .desc {
+        font-size: 0.8em;
+    }
+
+    #result img {
+        width: 4em;
     }
 }
